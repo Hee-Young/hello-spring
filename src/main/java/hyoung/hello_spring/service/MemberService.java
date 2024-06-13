@@ -3,10 +3,12 @@ package hyoung.hello_spring.service;
 import hyoung.hello_spring.domain.Member;
 import hyoung.hello_spring.repository.MemberRepository;
 import hyoung.hello_spring.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     private final MemberRepository memberRepository;
 
